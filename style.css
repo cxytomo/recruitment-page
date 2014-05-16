@@ -1,0 +1,70 @@
+html, body, div, header, footer, section, h1, h2, span, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ul {
+    list-style-type: none;
+}
+html,body,#job-header, #welfare{
+	height: 100%;
+}
+.container {
+	width: 1024px;
+    margin: 0 auto;
+}
+
+.carousel .pages {
+	height: 635px;
+}
+
+.carousel-content .page-1 .pages{
+	background-image: url('images/carouse1.jpg');
+	background-position: 0 -60px;
+}
+
+.carousel-control {
+	width: 1024px;
+	height: 635px;
+	position: absolute;
+}
+
+.carousel-control .handle {
+	position: absolute;
+	display: inline-block;
+	height: 99px;
+	width: 42px;
+}
+
+.carousel-control .prev {
+	background-image: url('images/prev.png');
+	left: 20px;
+	top: 40%;
+
+}
+
+.carousel-control .next {
+	background-image: url('images/next.png');
+	right: 20px;
+	top: 40%;
+}
+
+#welfare {
+	background-color: #e4f5fc;
+	height: 100%;
+}
+
+#welfare .container {
+	height: 100%;
+}
+
+#welfare .headline {
+	float: left;
+	height: 100%;
+	width: 79px;
+	margin-left: 15px;
+	text-indent: -2000px;
+	background-image: url('images/aboutus_small.png');
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
