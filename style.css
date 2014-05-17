@@ -1,32 +1,114 @@
-html, body, div, header, footer, section, h1, h2, span, ul, li {
+html, body, div, header, footer, section, h1, h2, span, ul, li, p {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
+
 ul {
     list-style-type: none;
 }
-html,body,#job-header, #welfare{
-	height: 100%;
+
+a {
+	text-decoration: none;
 }
+
+html,body,#job-header, #aboutus, #welfare {
+	height: 100%;
+	position: relative;
+	min-height: 620px;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	font-size: 0;
+	height: 0;
+	clear: both;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+/*start commented backslash hack \*/
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+/* close commented backslash hack*/
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+}
+
 .container {
 	width: 1024px;
     margin: 0 auto;
+    height: 100%;
+}
+
+.wrapper {
+	width: 1024px;
+    margin: 0 auto;
+    margin-top: 36px;
+    overflow: hidden;
+    font-family: 'Microsoft Yahei';
+}
+
+.carousel-content, .carousel-content li, .carousel .pages  {
+	height: 100%;
+}
+
+.carousel-content li {
+	float: left;
+	width: 1024px;
 }
 
 .carousel .pages {
-	height: 635px;
+	position: relative;
 }
 
-.carousel-content .page-1 .pages{
+.carousel-content .page-1 {
+	/*display: none;*/
+}
+
+.carousel-content .page-2 {
+	background-color:  #5ab9eb;
+}
+
+.carousel-content .page-1 .pages {
 	background-image: url('images/carouse1.jpg');
-	background-position: 0 -60px;
+	background-position: bottom left;
+}
+
+.carousel-content .page-1 .logo {
+	display: inline-block;
+	height: 46px;
+	width: 104px;
+	text-indent: -2000px;
+	position: absolute;
+	top: 40px;
+	left: 108px;
+	background-image: url('images/logo.png');
+	z-index: 101;
+}
+
+.carousel-content .page-2 .pages {
+	background-image: url('images/job.web.1_own_01.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
 .carousel-control {
 	width: 1024px;
 	height: 635px;
 	position: absolute;
+	z-index: 100;
 }
 
 .carousel-control .handle {
@@ -34,31 +116,34 @@ html,body,#job-header, #welfare{
 	display: inline-block;
 	height: 99px;
 	width: 42px;
+	top: 40%;
 }
 
 .carousel-control .prev {
 	background-image: url('images/prev.png');
 	left: 20px;
-	top: 40%;
 
 }
 
 .carousel-control .next {
 	background-image: url('images/next.png');
 	right: 20px;
-	top: 40%;
 }
 
-#welfare {
+#aboutus {
+	height: 100%;
+}
+
+#aboutus .clearfix {
+	height: 100%;
+}
+
+#aboutus .container {
+	height: 100%;
 	background-color: #e4f5fc;
-	height: 100%;
 }
 
-#welfare .container {
-	height: 100%;
-}
-
-#welfare .headline {
+#aboutus .headline {
 	float: left;
 	height: 100%;
 	width: 79px;
@@ -67,4 +152,95 @@ html,body,#job-header, #welfare{
 	background-image: url('images/aboutus_small.png');
 	background-position: 0 50%;
 	background-repeat: no-repeat;
+}
+
+#aboutus .aboutus {
+	float: right;
+	width: 776px;
+	height: 100%;
+	background-image: url('images/aboutusxx.png');
+	background-position: 133px 31px;
+	background-repeat: no-repeat; 
+}
+
+.scrolldown {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-image: url('images/scrolldown.png');
+}
+
+#welfare .container {
+	background-image: url('images/welfare_bg.jpg');
+	background-position: bottom center; 
+}
+
+#welfare .content {
+	height: 380px;
+	background-image: url('images/welfare_cont.png');
+	background-position: 160px 0;
+	background-repeat: no-repeat; 
+	background-size: 80%;
+}
+
+#post {
+}
+
+#post .joblist {
+	float: left;
+	width: 40%;
+	height: 100%;
+	padding-bottom: 9999px;
+	margin-bottom: -9999px; 
+}
+
+.joblist .cat-cont {
+	font-size: 14px
+}
+
+.joblist .cat-cont a {
+	text-indent: 40px;
+	display: inline-block;
+	width: 280px;
+	line-height: 58px;
+	border-bottom: 1px solid #d2d2d2;
+	color: #020202;
+}
+
+.joblist .cat-cont .job-arrow {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url('images/arrow.png');
+}
+
+
+
+.joblist .cat-cont li:first-child a {
+	border-top: 1px solid #d2d2d2;
+}
+
+.joblist .cat-cont li:last-child {
+	padding-bottom: 60px;
+}
+
+.joblist .cat-cont .active a,  .joblist .cat-cont a:hover {
+	background-color: #e2edfb;
+	color: #274c7a;
+}
+#post .job-desc {
+	float: right;
+	width: 60%;
+}
+
+.category {
+	display: inline-block;
+	color: #000;
+	font-family: 'Microsoft Yahei';
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 10px;   
 }
