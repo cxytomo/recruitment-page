@@ -86,13 +86,14 @@ html,body,#job-header, #aboutus, #welfare {
 .carousel-content .page-1 .pages {
 	background-image: url('images/carouse1.jpg');
 	background-position: top left;
+	background-size: cover;
 }
 
 .carousel-content .page-1 .logo {
 	display: inline-block;
 	height: 46px;
 	width: 104px;
-	text-indent: -2000px;
+	text-indent: -20000px;
 	position: absolute;
 	top: 40px;
 	left: 108px;
