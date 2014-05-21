@@ -14,6 +14,7 @@ ul {
 
 a {
 	text-decoration: none;
+	color: #428BCA;
 }
 
 html,body,#job-header, #aboutus, #welfare {
@@ -99,7 +100,6 @@ html,body,#job-header, #aboutus, #welfare {
 	left: 108px;
 	background-image: url('images/logo.png');
 	background-repeat: no-repeat;
-	z-index: 101;
 }
 
 .carousel-content .page-1 .intro {
@@ -109,7 +109,6 @@ html,body,#job-header, #aboutus, #welfare {
 	color: #0978b8;
 	bottom: 18px;
 	left: 109px;
-	z-index: 101;
 }
 
 .carousel-content .page-1 .intro a {
@@ -122,28 +121,21 @@ html,body,#job-header, #aboutus, #welfare {
 	background-repeat: no-repeat;
 }
 
-.carousel-control {
-	width: 1024px;
-	height: 635px;
-	position: absolute;
-	z-index: 100;
-}
-
-.carousel-control .handle {
+.carousel .handle {
 	position: absolute;
 	display: inline-block;
 	height: 99px;
 	width: 42px;
-	top: 40%;
+	top: 42%;
+	z-index: 100;
 }
 
-.carousel-control .prev {
+.carousel .prev {
 	background-image: url('images/prev.png');
 	left: 20px;
-
 }
 
-.carousel-control .next {
+.carousel .next {
 	background-image: url('images/next.png');
 	right: 20px;
 }
@@ -343,4 +335,20 @@ html,body,#job-header, #aboutus, #welfare {
 
 #post .job-desc ol li {
 	line-height: 30px;
+}
+
+footer {
+	color: #999;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer-links {
+	border-top: 1px solid #D2D2D2;
+	padding: 40px 0;
+}
+
+.footer-links li {
+	display: inline;
+	padding: 0 2px;
 }
