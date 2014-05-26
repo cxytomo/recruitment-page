@@ -14,13 +14,9 @@ ul {
 
 a {
 	text-decoration: none;
-	color: #428BCA;
 }
 
 html,body,#job-header, #aboutus, #welfare {
-	height: 100%;
-	position: relative;
-	min-height: 620px;
 }
 
 .clearfix:after {
@@ -46,193 +42,85 @@ html,body,#job-header, #aboutus, #welfare {
 }
 /* close commented backslash hack*/
 
-.carousel {
-	position: relative;
-	overflow: hidden;
+#job-header .container {
+	background-image: url('images/head-bg.jpg');
+    background-repeat: no-repeat; 
 }
 
-.container {
+#job-header .container {
 	width: 1024px;
     margin: 0 auto;
-    height: 100%;
+}
+
+#job-header .intro {
+	padding-top: 365px;
+	padding-bottom: 50px;
+	background-image: url('images/hd.png');
+	background-repeat: no-repeat;
+	background-position: 34px 268px;
+}
+
+#job-header .intro p {
+	color: #6e7172;
+	font-size: 13px;
+	margin-left: 34px;
+	width: 465px;
+}
+
+#job-header .intro p a {
+	color: #6e7172;
 }
 
 .wrapper {
-	width: 1024px;
-    margin: 0 auto;
     overflow: hidden;
 }
 
-.carousel-content, .carousel-content li, .carousel .pages  {
-	height: 100%;
-}
-
-.carousel-content li {
-	float: left;
+.recuit-detail {
+	padding-top: 24px;
+	padding-bottom: 40px;
+	background-color: #eee;	
 	width: 1024px;
+	margin: 0 auto;
 }
 
-.carousel .pages {
-	position: relative;
-}
-
-.carousel-content .page-1 {
-	/*display: none;*/
-}
-
-.carousel-content .page-2 {
-	background-color:  #5ab9eb;
-}
-
-.carousel-content .page-1 .pages {
-	background-image: url('images/carouse1.jpg');
-	background-position: top left;
-	background-size: cover;
-}
-
-.carousel-content .page-1 .logo {
-	display: inline-block;
-	height: 46px;
-	width: 104px;
-	text-indent: -20000px;
-	position: absolute;
-	top: 40px;
-	left: 108px;
-	background-image: url('images/logo.png');
-	background-repeat: no-repeat;
-}
-
-.carousel-content .page-1 .intro {
-	position: absolute;
-	width: 480px;
-	font-family: 'Microsoft Yahei';
-	color: #0978b8;
-	bottom: 18px;
-	left: 109px;
-}
-
-.carousel-content .page-1 .intro a {
-	color: #0978b8;
-}
-
-.carousel-content .page-2 .pages {
-	background-image: url('images/job.web.1_own_01.jpg');
-	background-position: top center;
-	background-repeat: no-repeat;
-}
-
-.carousel .handle {
-	position: absolute;
-	display: inline-block;
-	height: 99px;
-	width: 42px;
-	top: 42%;
-	z-index: 100;
-}
-
-.carousel .prev {
-	background-image: url('images/prev.png');
-	left: 20px;
-}
-
-.carousel .next {
-	background-image: url('images/next.png');
-	right: 20px;
-}
-
-#aboutus {
-	height: 100%;
-}
-
-#aboutus .clearfix {
-	height: 100%;
-}
-
-#aboutus .container {
-	height: 100%;
-	background-color: #e4f5fc;
-}
-
-#aboutus .headline {
+.recuit-detail .content .to-left {
 	float: left;
-	height: 100%;
-	width: 79px;
-	margin-left: 15px;
-	text-indent: -2000px;
-	background-image: url('images/aboutus_small.png');
-	background-position: 0 50%;
-	background-repeat: no-repeat;
 }
 
-#aboutus .about {
-	float: right;
-	width: 776px;
-	height: 100%;
-	background-image: url('images/aboutusxx.png');
-	background-size: 80%;
-	background-position: 133px 31px;
-	background-repeat: no-repeat; 
+.recuit-detail .container {
+	margin: 0 auto;
+	width: 954px;
 }
 
-#aboutus .about .intro {
-	margin-top: 296px;
-	margin-left: 160px;
-	width: 294px;
-	color: #81807f;
-	font-family: 'Microsoft Yahei';
-	font-size: 10px;
+.recuit-detail .hd li {
+	float: left;
 }
 
-#aboutus .about .intro p {
-	font-size: 40px;
-	font-family: 'Arial Black';
-	color: #0075a9;
-	line-height: 50px;
-}
-
-#aboutus .about .intro .unit {
-	font-size: 20px;
-	line-height: 20px;
-	position: relative;
-}
-
-.scrolldown {
-	position: absolute;
-	bottom: 10px;
-	left: 50%;
+.recuit-detail .hd a {
+	color: #fefefe;
 	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-image: url('images/scrolldown.png');
+	line-height: 34px;
+	height: 34px;
+	width: 164px;
+	background-color: #89b8dc;
+	text-align: center;
+	margin-right: 2px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
 }
 
-#welfare .container {
-	background-image: url('images/welfare_bg.jpg');
-	background-position: bottom center; 
-}
-
-#welfare .content {
-	height: 380px;
-	background-image: url('images/welfare_cont.png');
-	background-position: 678px 40px;
-	background-repeat: no-repeat; 
-	background-size: 25%;
-	color: #74ccfe;
-	font-size: 12px;
-	font-weight: lighter;
-}
-
-#welfare .content .intro {
-	padding-top: 113px;
-	padding-left: 164px;
-	width: 500px;
-}
-
-#welfare .content p {
-	margin-bottom: 54px;
+.recuit-detail .hd .active {
+	background-color: #2483cb;
 }
 
 #post {
+	display: none;
+	background-color: white;
+}
+
+#corp-develop {
+	display: none;
 }
 
 #post .joblist {
@@ -337,6 +225,123 @@ html,body,#job-header, #aboutus, #welfare {
 	line-height: 30px;
 }
 
+#team {
+	background-color: #fefefe;
+}
+
+#team .team-member {
+	padding-top: 54px;
+	color: #0075a9;
+}
+
+#team .welfare {
+	margin-top: 158px;
+	color: #626262;
+}
+
+#team .team-member h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+#team .team-member h1 span {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+#team .team-member .slogan {
+	width: 262px;
+	text-align: center;
+	margin: 15px auto;
+	line-height: 150%;
+}
+
+#team .compose {
+	border-top: 1px dotted #0075a9;
+	margin-top: 56px;
+}
+
+#team .compose li {
+	float: left;
+	margin-top: -40px;
+	margin-right: 57px;
+}
+
+#team .compose li:first-child {
+	margin-left: 57px;
+}
+
+#team .compose .hd {
+	font-family: "Arial Black", Arial;
+	font-size: 50px;
+	font-weight: bolder;
+	text-align: center;
+	display: block;
+}
+
+#team .compose .detail {
+	width: 242px;
+	color: #81807f;
+	font-size: 12px;
+}
+
+#team .icon-list {
+	width: 600px;
+	margin: 18px auto;
+}
+
+#team .icon-list li {
+	float: left;
+	margin-right: 54px;
+}
+
+#team .icon-list li:last-child {
+	margin-right: 0;
+}
+
+#team .wrapper {
+	margin: 0 auto;
+	width: 758px;
+}
+
+#team .wrapper li {
+	float: left;
+}
+
+#team .welfare .hd {
+	font-size: 40px;
+	font-weight: bolder;
+	width: 88px;
+	text-align: center;
+	margin-right: 26px;
+}
+
+#team .welfare {
+	padding-bottom: 60px;
+	background-image: url('images/welfare-bg.png');
+	background-repeat: no-repeat;
+	background-position: 213px 230px;
+}
+
+#team .welfare .equip {
+	font-size: 13px;
+	width: 314px;
+	margin-right: 88px;
+}
+
+#corp-develop {
+	overflow: hidden;
+}
+
+#corp-develop img {
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 54px;
+	padding-left: 154px;
+	background-color: #fefefe;
+	padding-right: 170px;
+}
+
 footer {
 	color: #999;
 	text-align: center;
@@ -344,7 +349,6 @@ footer {
 }
 
 .footer-links {
-	border-top: 1px solid #D2D2D2;
 	padding: 40px 0;
 }
 
