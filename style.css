@@ -114,13 +114,24 @@ html,body,#job-header, #aboutus, #welfare {
 	background-color: #2483cb;
 }
 
-#post {
+.recuit-detail .content {
+	position: relative;
+	background-color: white;
+}
+
+.recuit-detail .contnt {
 	display: none;
 	background-color: white;
 }
 
-#corp-develop {
-	display: none;
+.recuit-detail .content .show {
+	display: block;
+}
+
+#post {
+	background-image: url('images/join-us.png');
+	background-repeat: no-repeat;
+	background-position: 577px 940px;
 }
 
 #post .joblist {
@@ -263,8 +274,8 @@ html,body,#job-header, #aboutus, #welfare {
 
 #team .compose li {
 	float: left;
-	margin-top: -40px;
 	margin-right: 57px;
+	position: relative;
 }
 
 #team .compose li:first-child {
@@ -276,13 +287,30 @@ html,body,#job-header, #aboutus, #welfare {
 	font-size: 50px;
 	font-weight: bolder;
 	text-align: center;
-	display: block;
+	position: absolute;
+	top: -35px;
+	background-color: white;
+	padding: 0 10px;
+}
+
+#team .compose .team-compose .hd {
+	left: 53px;
+}
+
+#team .compose .area .hd {
+	left: 3px;
+}
+
+#team .compose .spirit .hd {
+	left: 40px;
 }
 
 #team .compose .detail {
 	width: 242px;
 	color: #81807f;
 	font-size: 12px;
+	margin-top: 40px;
+	text-align: justify;
 }
 
 #team .icon-list {
@@ -342,17 +370,21 @@ html,body,#job-header, #aboutus, #welfare {
 	padding-right: 170px;
 }
 
-footer {
+.footer-links {
 	color: #999;
 	text-align: center;
 	font-size: 14px;
 }
 
-.footer-links {
+.footer-links .wrapper {
 	padding: 40px 0;
 }
 
-.footer-links li {
+.footer-links .wrapper li {
 	display: inline;
 	padding: 0 2px;
+}
+
+.footer-links .wrapper a {
+	color: #0075a9;
 }

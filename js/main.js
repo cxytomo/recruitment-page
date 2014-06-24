@@ -1,24 +1,17 @@
 //job detail list
-$('.js-job-detail').on('click', function(e) {
-            var $tar = $(e.target);
-            var id = $tar.data('id');
-            $('.joblist .cat-cont li').removeClass('active');
-            $tar.parent('li').addClass('active');
-            $('#job-desc > div').removeClass('active');
-            $('#job-desc').find('div[data-id="' + id + '"]').addClass('active');
-});
 
-//scrollTo
+
+//tab switch
 (function(){
-  $('.scrolldown').click(function(e){
-    var tar
-    , arr;
+  $('.recuit-detail .hd a').click(function(e){
+    var $tar
+    , ele_height;
     e = e || window.event;
-    tar = e.target || e.srcElement;
-    arr = this.hash.split("#");
-    arr = arr[1];
-    $('html, body').scrollTo(this.hash, this.hash);
+    $tar = $(e.target || e.srcElement);
+    $('.recuit-detail .hd .active').removeClass('active');
+    $tar.addClass('active');
+    $('.recuit-detail .content .show').removeClass('show');
+    $(this.hash).addClass('show');
     e.preventDefault();
-    return activate(this.hash);
   });
 })();
